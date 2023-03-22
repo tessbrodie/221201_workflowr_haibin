@@ -36,6 +36,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <link rel="icon" href="https://github.com/workflowr/workflowr-assets/raw/main/img/reproducible.png">
 <!-- Add a small amount of space between sections. -->
@@ -355,7 +357,13 @@ div.tocify {
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/tessbrodie/221201_workflowr_haibin">
+    <span class="fab fa-github"></span>
+     
+    Source code
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -397,13 +405,13 @@ aria-hidden="true"></span> </a>
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2023-03-21
+<strong>Last updated:</strong> 2023-03-22
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 5
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> 2
+aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>221201_workflowr_haibin/</code>
@@ -497,51 +505,16 @@ versions is critical for reproducibility.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongdetected">
-<span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> <strong>Cache:</strong> detected </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongnone">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>Cache:</strong> none </a>
 </p>
 </div>
-<div id="strongCachestrongdetected" class="panel-collapse collapse">
+<div id="strongCachestrongnone" class="panel-collapse collapse">
 <div class="panel-body">
-The following chunks had caches available:
-<ul>
-<li>
-annotate new data
-</li>
-<li>
-classifier performance
-</li>
-<li>
-load-libs
-</li>
-<li>
-load data
-</li>
-<li>
-load model reports
-</li>
-<li>
-prepare new data
-</li>
-<li>
-renaming patient_id to donor_id
-</li>
-<li>
-save spe2
-</li>
-<li>
-session-info-chunk-inserted-by-workflowr
-</li>
-<li>
-unnamed-chunk-1
-</li>
-</ul>
-<p>To ensure reproducibility of the results, delete the cache directory
-<code>2_IMCA_cell_annotation_cache</code> and re-run the analysis. To
-have workflowr automatically delete the cache directory prior to
-building the file, set <code>delete_cache = TRUE</code> when running
-<code>wflow_build()</code> or <code>wflow_publish()</code>.</p>
+<p>Nice! There were no cached chunks for this analysis, so you can be
+confident that you successfully produced the results during this
+run.</p>
 </div>
 </div>
 </div>
@@ -590,13 +563,15 @@ laptop/Users2/Tess/SteinbockCellSegmentation/221130_haibin/221201_workflowr_haib
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrong75a88a8">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomtessbrodie221201workflowrhaibintree0e860bceb368d797d440220e83fbca8f27c5ae12targetblank0e860bca">
 <span class="glyphicon glyphicon-ok text-success"
-aria-hidden="true"></span> <strong>Repository version:</strong> 75a88a8
+aria-hidden="true"></span> <strong>Repository version:</strong>
+<a href="https://github.com/tessbrodie/221201_workflowr_haibin/tree/0e860bceb368d797d440220e83fbca8f27c5ae12" target="_blank">0e860bc</a>
 </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrong75a88a8"
+<div
+id="strongRepositoryversionstrongahrefhttpsgithubcomtessbrodie221201workflowrhaibintree0e860bceb368d797d440220e83fbca8f27c5ae12targetblank0e860bca"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -605,7 +580,8 @@ and connecting the code version to the results is critical for
 reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version 75a88a8.
+The results in this page were generated with repository version
+<a href="https://github.com/tessbrodie/221201_workflowr_haibin/tree/0e860bceb368d797d440220e83fbca8f27c5ae12" target="_blank">0e860bc</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -624,7 +600,6 @@ Ignored files:
     Ignored:    .Rproj.user/
     Ignored:    analysis/0_prep_data_cache/
     Ignored:    analysis/1_QC_mask_cache/
-    Ignored:    analysis/2_IMCA_cell_annotation_cache/
     Ignored:    analysis/3_dim_red_cache/
     Ignored:    analysis/4_img_vis_cache/
     Ignored:    analysis/5_spatial_vis_cache/
@@ -659,9 +634,6 @@ Untracked files:
     Untracked:  output/spe_ca_v2_dr.rds
     Untracked:  umap_metadata.png
     Untracked:  umap_target.png
-
-Unstaged changes:
-    Modified:   analysis/_site.yml
 
 </code></pre>
 <p>
@@ -710,10 +682,27 @@ Message
 <tbody>
 <tr>
 <td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/tessbrodie/221201_workflowr_haibin/35a46fdccfec07d9040d19fa7a351dcd553e916d/docs/2_IMCA_cell_annotation.html" target="_blank">35a46fd</a>
+</td>
+<td>
+tessbrodie
+</td>
+<td>
+2023-03-21
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
 Rmd
 </td>
 <td>
-75a88a8
+<a href="https://github.com/tessbrodie/221201_workflowr_haibin/blob/75a88a8e7af8166c7684d78bc8388e164aa729ed/analysis/2_IMCA_cell_annotation.Rmd" target="_blank">75a88a8</a>
 </td>
 <td>
 tessbrodie
@@ -743,8 +732,13 @@ Publish the initial files for myproject
 </style>
 <div id="load-packages" class="section level3">
 <h3>Load packages</h3>
-<pre class="r"><code>library(SpatialExperiment)
-library(Rphenograph)
+<pre class="r"><code>library(SpatialExperiment)</code></pre>
+<pre><code>Warning: multiple methods tables found for &#39;aperm&#39;</code></pre>
+<pre><code>Warning: replacing previous import &#39;BiocGenerics::aperm&#39; by
+&#39;DelayedArray::aperm&#39; when loading &#39;SummarizedExperiment&#39;</code></pre>
+<pre><code>Warning: replacing previous import &#39;BiocGenerics::aperm&#39; by
+&#39;DelayedArray::aperm&#39; when loading &#39;HDF5Array&#39;</code></pre>
+<pre class="r"><code>library(Rphenograph)
 library(igraph)
 library(dittoSeq)
 library(viridis)
@@ -784,9 +778,9 @@ spe &lt;- readRDS(file.path(&quot;output&quot;, &quot;spe_ca_v2_dr.rds&quot;))</
                     ymax = Accuracy + AccuracySD),
                 width = 0.4) +
     theme_classic(base_size = 15)</code></pre>
-<p><img src="figure/2_IMCA_cell_annotation.Rmd/classifier performance-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/2_IMCA_cell_annotation.Rmd/classifier%20performance-1.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>plot(varImp(rffit$classifier))</code></pre>
-<p><img src="figure/2_IMCA_cell_annotation.Rmd/classifier performance-2.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/2_IMCA_cell_annotation.Rmd/classifier%20performance-2.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>rffit$classifier$finalModel$confusion</code></pre>
 <pre><code>                   AEC1 AEC2 AlveolarFibroblast AlveolarVessel   B CD4 CD8
 AEC1               1773    6                 21              9   0   0   0
@@ -885,7 +879,7 @@ tibble(max_prob = rowMax(as.matrix(cell_prob)),
         ylab(&quot;Cell type&quot;) + 
         xlim(c(0,1.2))</code></pre>
 <pre><code>Picking joint bandwidth of 0.0183</code></pre>
-<p><img src="figure/2_IMCA_cell_annotation.Rmd/annotate new data-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/2_IMCA_cell_annotation.Rmd/annotate%20new%20data-1.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r"><code># Store labels in SpatialExperiment object
 spe$celltype &lt;- cell_class
 
@@ -914,7 +908,7 @@ table(spe$celltype, spe$sample_id)</code></pre>
                      221031_day1_Haibin_11_16 221031_day1_Haibin_2_7
   AEC1                                    337                    322
   AEC2                                    688                    471
-  AlveolarFibroblast                      346                    251
+  AlveolarFibroblast                      347                    251
   AlveolarVessel                          309                    304
   B                                       131                    165
   CD4                                      97                    123
@@ -924,7 +918,7 @@ table(spe$celltype, spe$sample_id)</code></pre>
   Macrophages_F480                        486                    307
   Monocytes                               114                    111
   Neutrophils                              12                     18
-  Stroma_EcadLow                          272                     92
+  Stroma_EcadLow                          271                     92
   TAF                                     382                    543
   Tumor                                  1134                   1709
   undefined                               307                    337
@@ -933,9 +927,9 @@ table(spe$celltype, spe$sample_id)</code></pre>
                     
                      221031_day1_Haibin_3_8 221031_day1_Haibin_4_9
   AEC1                                  434                    404
-  AEC2                                  742                    862
+  AEC2                                  744                    862
   AlveolarFibroblast                    408                    430
-  AlveolarVessel                        382                    312
+  AlveolarVessel                        381                    312
   B                                     265                    142
   CD4                                   224                    110
   CD8                                   225                    247
@@ -948,7 +942,7 @@ table(spe$celltype, spe$sample_id)</code></pre>
   TAF                                   266                    375
   Tumor                                1020                   1653
   undefined                             342                    255
-  Vessel_aSMA_noCD31                    156                    118
+  Vessel_aSMA_noCD31                    155                    118
   Vessel_CD31                           379                    345
                     
                      221031_day1_Haibin_5_10 221031_day1_Haibin_6_11
@@ -1053,9 +1047,9 @@ table(spe$celltype, spe$sample_id)</code></pre>
                     
                      221102_day3_Haibin_30_6 221102_day3_Haibin_31_7
   AEC1                                   429                     473
-  AEC2                                   601                     758
+  AEC2                                   600                     758
   AlveolarFibroblast                     359                     410
-  AlveolarVessel                         303                     264
+  AlveolarVessel                         304                     264
   B                                       53                      67
   CD4                                     57                      72
   CD8                                     69                      98
@@ -1073,8 +1067,8 @@ table(spe$celltype, spe$sample_id)</code></pre>
                     
                      221102_day3_Haibin_32_8 221102_day3_Haibin_33_9
   AEC1                                   567                     522
-  AEC2                                  1097                     589
-  AlveolarFibroblast                     561                     269
+  AEC2                                  1096                     589
+  AlveolarFibroblast                     562                     269
   AlveolarVessel                         290                     349
   B                                       68                      67
   CD4                                     98                      73
@@ -1084,16 +1078,16 @@ table(spe$celltype, spe$sample_id)</code></pre>
   Macrophages_F480                       558                     175
   Monocytes                              138                      73
   Neutrophils                             50                      11
-  Stroma_EcadLow                          93                     268
+  Stroma_EcadLow                          93                     269
   TAF                                    995                     350
   Tumor                                 2157                     820
   undefined                              276                     268
-  Vessel_aSMA_noCD31                     306                     296
+  Vessel_aSMA_noCD31                     306                     295
   Vessel_CD31                            313                     189
                     
                      221102_day3_Haibin_34_10 221102_day3_Haibin_35_11
   AEC1                                    272                      960
-  AEC2                                    954                     1386
+  AEC2                                    955                     1385
   AlveolarFibroblast                      376                      647
   AlveolarVessel                          424                      455
   B                                        42                       29
@@ -1105,16 +1099,16 @@ table(spe$celltype, spe$sample_id)</code></pre>
   Monocytes                               108                       44
   Neutrophils                              14                        9
   Stroma_EcadLow                          134                      119
-  TAF                                     855                      451
-  Tumor                                  2109                     1659
+  TAF                                     855                      452
+  Tumor                                  2108                     1660
   undefined                               252                      516
-  Vessel_aSMA_noCD31                      274                      280
+  Vessel_aSMA_noCD31                      274                      279
   Vessel_CD31                             507                      455
                     
                      221102_day3_Haibin_36_12 221103_day4_Haibin_37_1
   AEC1                                    519                     517
-  AEC2                                    439                     892
-  AlveolarFibroblast                      193                     360
+  AEC2                                    440                     894
+  AlveolarFibroblast                      192                     360
   AlveolarVessel                          302                     491
   B                                        55                      63
   CD4                                      67                      72
@@ -1126,7 +1120,7 @@ table(spe$celltype, spe$sample_id)</code></pre>
   Neutrophils                              16                      11
   Stroma_EcadLow                          158                     298
   TAF                                     252                     424
-  Tumor                                  1009                    1283
+  Tumor                                  1009                    1281
   undefined                               364                     290
   Vessel_aSMA_noCD31                      320                     176
   Vessel_CD31                             393                     322
@@ -1185,17 +1179,17 @@ table(spe$celltype, spe$sample_id)</code></pre>
   Monocytes                               47                      80
   Neutrophils                             45                      22
   Stroma_EcadLow                         209                     263
-  TAF                                   1228                     881
+  TAF                                   1227                     881
   Tumor                                 2038                    2578
   undefined                              313                     364
-  Vessel_aSMA_noCD31                     959                     539
+  Vessel_aSMA_noCD31                     960                     539
   Vessel_CD31                            196                     355
                     
                      221103_day4_Haibin_44_8 221103_day4_Haibin_45_9
-  AEC1                                  1118                     552
-  AEC2                                  1315                    1332
-  AlveolarFibroblast                     789                     486
-  AlveolarVessel                         496                     511
+  AEC1                                  1118                     553
+  AEC2                                  1316                    1330
+  AlveolarFibroblast                     788                     486
+  AlveolarVessel                         496                     512
   B                                       51                      31
   CD4                                     94                      36
   CD8                                    185                      35
@@ -1206,34 +1200,34 @@ table(spe$celltype, spe$sample_id)</code></pre>
   Neutrophils                             12                      23
   Stroma_EcadLow                         147                      91
   TAF                                    724                     235
-  Tumor                                 1398                     722
+  Tumor                                 1398                     723
   undefined                              258                     337
   Vessel_aSMA_noCD31                     415                     184
-  Vessel_CD31                            408                     280
+  Vessel_CD31                            408                     279
                     
                      221103_day4_Haibin_46_10 221103_day4_Haibin_47_11
   AEC1                                   1077                     1052
   AEC2                                    995                     1540
   AlveolarFibroblast                      771                      978
-  AlveolarVessel                          685                      554
+  AlveolarVessel                          685                      555
   B                                       101                       49
   CD4                                      71                       63
   CD8                                      72                      101
-  Epithelial                              154                      366
+  Epithelial                              154                      367
   Macrophages_CD206                       593                      484
   Macrophages_F480                        112                      186
   Monocytes                               144                      185
   Neutrophils                              38                       94
   Stroma_EcadLow                          272                      169
   TAF                                     362                      569
-  Tumor                                  1008                     2100
+  Tumor                                  1008                     2099
   undefined                               284                      228
   Vessel_aSMA_noCD31                      356                      342
-  Vessel_CD31                             513                      548
+  Vessel_CD31                             513                      547
                     
                      221103_day4_Haibin_48-split_20 221103_day4_Haibin_48_12
   AEC1                                          527                      505
-  AEC2                                          548                      603
+  AEC2                                          547                      603
   AlveolarFibroblast                            213                      297
   AlveolarVessel                                337                      326
   B                                              28                       36
@@ -1245,11 +1239,11 @@ table(spe$celltype, spe$sample_id)</code></pre>
   Monocytes                                      66                      108
   Neutrophils                                    12                       24
   Stroma_EcadLow                                 70                       51
-  TAF                                            96                      704
-  Tumor                                         468                      920
+  TAF                                            96                      703
+  Tumor                                         469                      920
   undefined                                     126                      137
   Vessel_aSMA_noCD31                             60                      163
-  Vessel_CD31                                   188                      238
+  Vessel_CD31                                   188                      239
                     
                      221103_day4_Haibin_49_13 221103_day4_Haibin_50_14
   AEC1                                    795                      823
@@ -1305,10 +1299,10 @@ table(spe$celltype, spe$sample_id)</code></pre>
   Monocytes                                56                       68
   Neutrophils                              18                        3
   Stroma_EcadLow                          336                      276
-  TAF                                     111                      111
+  TAF                                     110                      111
   Tumor                                   326                      803
   undefined                               493                      132
-  Vessel_aSMA_noCD31                      318                      227
+  Vessel_aSMA_noCD31                      319                      227
   Vessel_CD31                             252                      158
                     
                      22111_day2_Haibin_13_1 22111_day2_Haibin_14_2
@@ -1316,7 +1310,7 @@ table(spe$celltype, spe$sample_id)</code></pre>
   AEC2                                  684                   1160
   AlveolarFibroblast                    304                    585
   AlveolarVessel                        289                    483
-  B                                     165                    221
+  B                                     164                    221
   CD4                                   169                    230
   CD8                                   116                    126
   Epithelial                            468                    506
@@ -1329,7 +1323,7 @@ table(spe$celltype, spe$sample_id)</code></pre>
   Tumor                                1440                    804
   undefined                             358                    348
   Vessel_aSMA_noCD31                    237                    267
-  Vessel_CD31                           234                    238
+  Vessel_CD31                           235                    238
                     
                      22111_day2_Haibin_15_3 22111_day2_Haibin_16_4
   AEC1                                  354                    901
@@ -1399,14 +1393,14 @@ table(spe$celltype, spe$sample_id)</code></pre>
   B                                     130                      69
   CD4                                   176                     136
   CD8                                   170                     213
-  Epithelial                            116                     284
+  Epithelial                            116                     285
   Macrophages_CD206                     333                     220
   Macrophages_F480                      562                     498
   Monocytes                              95                     111
   Neutrophils                            60                      27
   Stroma_EcadLow                         96                     117
   TAF                                   474                     493
-  Tumor                                1316                    1219
+  Tumor                                1316                    1218
   undefined                             289                     338
   Vessel_aSMA_noCD31                    200                     179
   Vessel_CD31                           270                     354
@@ -1422,8 +1416,8 @@ table(spe$celltype, spe$sample_id)</code></pre>
   Epithelial                             285                     80
   Macrophages_CD206                      418                    428
   Macrophages_F480                       416                    456
-  Monocytes                               86                     88
-  Neutrophils                             55                     17
+  Monocytes                               86                     87
+  Neutrophils                             55                     18
   Stroma_EcadLow                          56                    180
   TAF                                   1522                    604
   Tumor                                 2833                   2701
@@ -1463,7 +1457,7 @@ Session information
 </p>
 <div id="workflowr-sessioninfo" class="collapse">
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>R version 4.2.1 (2022-06-23 ucrt)
+<pre><code>R version 4.2.2 (2022-10-31 ucrt)
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 Running under: Windows 10 x64 (build 19044)
 
@@ -1479,133 +1473,128 @@ attached base packages:
 [8] base     
 
 other attached packages:
- [1] forcats_0.5.2               dplyr_1.0.9                
- [3] purrr_0.3.4                 readr_2.1.2                
- [5] tidyr_1.2.0                 tibble_3.1.7               
- [7] tidyverse_1.3.2             stringr_1.4.1              
- [9] ggridges_0.5.3              caret_6.0-93               
-[11] lattice_0.20-45             Rphenoannoy_0.1.0          
-[13] Matrix_1.4-1                cytomapper_1.8.0           
-[15] EBImage_4.38.0              gridExtra_2.3              
-[17] pheatmap_1.0.12             patchwork_1.1.2            
-[19] ConsensusClusterPlus_1.60.0 kohonen_3.0.11             
-[21] CATALYST_1.20.1             scran_1.24.0               
-[23] scuttle_1.6.2               BiocParallel_1.30.3        
-[25] bluster_1.6.0               viridis_0.6.2              
-[27] viridisLite_0.4.1           dittoSeq_1.8.1             
-[29] Rphenograph_0.99.1          igraph_1.3.4               
-[31] ggplot2_3.3.6               SpatialExperiment_1.6.0    
-[33] SingleCellExperiment_1.18.0 SummarizedExperiment_1.26.1
-[35] Biobase_2.56.0              GenomicRanges_1.48.0       
-[37] GenomeInfoDb_1.32.2         IRanges_2.30.0             
-[39] S4Vectors_0.34.0            BiocGenerics_0.42.0        
-[41] MatrixGenerics_1.8.1        matrixStats_0.62.0         
-[43] workflowr_1.7.0            
+ [1] lubridate_1.9.2             forcats_1.0.0              
+ [3] dplyr_1.1.0                 purrr_1.0.1                
+ [5] readr_2.1.4                 tidyr_1.3.0                
+ [7] tibble_3.1.8                tidyverse_2.0.0            
+ [9] stringr_1.5.0               ggridges_0.5.4             
+[11] caret_6.0-93                lattice_0.20-45            
+[13] Rphenoannoy_0.1.0           Matrix_1.5-3               
+[15] cytomapper_1.10.1           EBImage_4.38.0             
+[17] gridExtra_2.3               pheatmap_1.0.12            
+[19] patchwork_1.1.2             ConsensusClusterPlus_1.60.0
+[21] kohonen_3.0.11              CATALYST_1.20.1            
+[23] scran_1.24.1                scuttle_1.6.2              
+[25] BiocParallel_1.30.3         bluster_1.6.0              
+[27] viridis_0.6.2               viridisLite_0.4.1          
+[29] dittoSeq_1.8.1              Rphenograph_0.99.1         
+[31] igraph_1.4.0                ggplot2_3.4.1              
+[33] SpatialExperiment_1.8.0     SingleCellExperiment_1.20.0
+[35] SummarizedExperiment_1.28.0 Biobase_2.56.0             
+[37] GenomicRanges_1.48.0        GenomeInfoDb_1.34.9        
+[39] IRanges_2.30.0              S4Vectors_0.34.0           
+[41] BiocGenerics_0.44.0         MatrixGenerics_1.10.0      
+[43] matrixStats_0.62.0          workflowr_1.7.0            
 
 loaded via a namespace (and not attached):
-  [1] rsvd_1.0.5                svglite_2.1.0            
-  [3] class_7.3-20              fftwtools_0.9-11         
-  [5] ps_1.7.1                  foreach_1.5.2            
-  [7] rprojroot_2.0.3           crayon_1.5.1             
-  [9] MASS_7.3-58               rhdf5filters_1.8.0       
- [11] nlme_3.1-158              backports_1.4.1          
- [13] reprex_2.0.2              rlang_1.0.4              
- [15] XVector_0.36.0            readxl_1.4.1             
- [17] irlba_2.3.5               callr_3.7.2              
- [19] limma_3.52.2              scater_1.24.0            
- [21] rjson_0.2.21              glue_1.6.2               
- [23] parallel_4.2.1            processx_3.7.0           
- [25] vipor_0.4.5               shinydashboard_0.7.2     
- [27] haven_2.5.1               tidyselect_1.1.2         
- [29] XML_3.99-0.10             zoo_1.8-10               
- [31] ggpubr_0.4.0              nnls_1.4                 
- [33] xtable_1.8-4              magrittr_2.0.3           
- [35] evaluate_0.16             cli_3.3.0                
- [37] zlibbioc_1.42.0           rstudioapi_0.14          
- [39] sp_1.5-0                  whisker_0.4              
- [41] bslib_0.4.0               rpart_4.1.16             
- [43] shiny_1.7.2               BiocSingular_1.12.0      
- [45] xfun_0.31                 clue_0.3-61              
- [47] cluster_2.1.3             ggrepel_0.9.1            
- [49] listenv_0.8.0             png_0.1-7                
- [51] future_1.28.0             ipred_0.9-13             
- [53] withr_2.5.0               bitops_1.0-7             
- [55] aws.signature_0.6.0       ggforce_0.3.3            
- [57] RBGL_1.72.0               plyr_1.8.7               
- [59] cellranger_1.1.0          ncdfFlow_2.42.1          
- [61] hardhat_1.2.0             dqrng_0.3.0              
- [63] pROC_1.18.0               pillar_1.8.1             
- [65] RcppParallel_5.1.5        GlobalOptions_0.1.2      
- [67] cachem_1.0.6              multcomp_1.4-20          
- [69] fs_1.5.2                  CytoML_2.8.0             
- [71] raster_3.5-21             GetoptLong_1.0.5         
- [73] DelayedMatrixStats_1.18.0 vctrs_0.4.1              
- [75] ellipsis_0.3.2            generics_0.1.3           
- [77] lava_1.6.10               tools_4.2.1              
- [79] beeswarm_0.4.0            munsell_0.5.0            
- [81] tweenr_1.0.2              aws.s3_0.3.21            
- [83] DelayedArray_0.22.0       fastmap_1.1.0            
- [85] compiler_4.2.1            abind_1.4-5              
- [87] httpuv_1.6.5              GenomeInfoDbData_1.2.8   
- [89] prodlim_2019.11.13        edgeR_3.38.1             
- [91] ggnewscale_0.4.7          ggpointdensity_0.1.0     
- [93] deldir_1.0-6              utf8_1.2.2               
- [95] later_1.3.0               recipes_1.0.1            
- [97] jsonlite_1.8.0            scales_1.2.1             
- [99] graph_1.74.0              ScaledMatrix_1.4.0       
-[101] carData_3.0-5             sparseMatrixStats_1.8.0  
-[103] promises_1.2.0.1          car_3.1-0                
-[105] doParallel_1.0.17         latticeExtra_0.6-30      
-[107] R.utils_2.12.0            rmarkdown_2.16           
-[109] sandwich_3.0-2            cowplot_1.1.1            
-[111] statmod_1.4.37            Rtsne_0.16               
-[113] HDF5Array_1.24.1          survival_3.3-1           
-[115] yaml_2.3.5                plotrix_3.8-2            
-[117] systemfonts_1.0.4         cytolib_2.8.0            
-[119] flowWorkspace_4.8.0       htmltools_0.5.3          
-[121] locfit_1.5-9.6            digest_0.6.29            
-[123] assertthat_0.2.1          mime_0.12                
-[125] tiff_0.1-11               future.apply_1.9.1       
-[127] data.table_1.14.2         R.oo_1.25.0              
-[129] flowCore_2.8.0            drc_3.0-1                
-[131] labeling_0.4.2            splines_4.2.1            
-[133] Rhdf5lib_1.18.2           googledrive_2.0.0        
-[135] RCurl_1.98-1.7            broom_1.0.1              
-[137] hms_1.1.2                 modelr_0.1.9             
-[139] rhdf5_2.40.0              colorspace_2.0-3         
-[141] DropletUtils_1.16.0       base64enc_0.1-3          
-[143] ggbeeswarm_0.6.0          shape_1.4.6              
-[145] nnet_7.3-17               sass_0.4.2               
-[147] Rcpp_1.0.9                RANN_2.6.1               
-[149] mvtnorm_1.1-3             circlize_0.4.15          
-[151] FlowSOM_2.4.0             RProtoBufLib_2.8.0       
-[153] fansi_1.0.3               tzdb_0.3.0               
-[155] parallelly_1.32.1         ModelMetrics_1.2.2.2     
-[157] R6_2.5.1                  grid_4.2.1               
-[159] lifecycle_1.0.1           curl_4.3.2               
-[161] ggsignif_0.6.3            googlesheets4_1.0.1      
-[163] jquerylib_0.1.4           TH.data_1.1-1            
-[165] RColorBrewer_1.1-3        iterators_1.0.14         
-[167] gower_1.0.0               svgPanZoom_0.3.4         
-[169] htmlwidgets_1.5.4         beachmat_2.12.0          
-[171] polyclip_1.10-0           terra_1.5-34             
-[173] rvest_1.0.3               ComplexHeatmap_2.12.1    
-[175] globals_0.16.1            codetools_0.2-18         
-[177] lubridate_1.8.0           metapod_1.4.0            
-[179] randomForest_4.7-1.1      gtools_3.9.3             
-[181] getPass_0.2-2             dbplyr_2.2.1             
-[183] R.methodsS3_1.8.2         gtable_0.3.1             
-[185] DBI_1.1.3                 git2r_0.30.1             
-[187] httr_1.4.4                highr_0.9                
-[189] stringi_1.7.8             reshape2_1.4.4           
-[191] farver_2.1.1              hexbin_1.28.2            
-[193] Rgraphviz_2.40.0          magick_2.7.3             
-[195] timeDate_4021.104         xml2_1.3.3               
-[197] colorRamps_2.3.1          ggcyto_1.24.1            
-[199] BiocNeighbors_1.14.0      interp_1.1-3             
-[201] scattermore_0.8           jpeg_0.1-9               
-[203] pkgconfig_2.0.3           gargle_1.2.1             
-[205] rstatix_0.7.0             knitr_1.40               </code></pre>
+  [1] scattermore_0.8           flowWorkspace_4.8.0      
+  [3] ModelMetrics_1.2.2.2      R.methodsS3_1.8.2        
+  [5] knitr_1.42                irlba_2.3.5.1            
+  [7] multcomp_1.4-22           DelayedArray_0.22.0      
+  [9] R.utils_2.12.2            rpart_4.1.19             
+ [11] data.table_1.14.8         hardhat_1.2.0            
+ [13] RCurl_1.98-1.7            doParallel_1.0.17        
+ [15] generics_0.1.3            flowCore_2.8.0           
+ [17] ScaledMatrix_1.4.1        terra_1.7-18             
+ [19] callr_3.7.3               cowplot_1.1.1            
+ [21] TH.data_1.1-1             RANN_2.6.1               
+ [23] future_1.32.0             ggpointdensity_0.1.0     
+ [25] tzdb_0.3.0                xml2_1.3.3               
+ [27] httpuv_1.6.9              gower_1.0.1              
+ [29] xfun_0.37                 hms_1.1.2                
+ [31] jquerylib_0.1.4           evaluate_0.20            
+ [33] promises_1.2.0.1          fansi_1.0.4              
+ [35] htmlwidgets_1.6.1         Rgraphviz_2.40.0         
+ [37] DBI_1.1.3                 ellipsis_0.3.2           
+ [39] ggcyto_1.24.1             ggnewscale_0.4.8         
+ [41] ggpubr_0.6.0              backports_1.4.1          
+ [43] cytolib_2.8.0             svgPanZoom_0.3.4         
+ [45] RcppParallel_5.1.6        deldir_1.0-6             
+ [47] sparseMatrixStats_1.8.0   vctrs_0.5.2              
+ [49] abind_1.4-5               cachem_1.0.7             
+ [51] withr_2.5.0               ggforce_0.4.1            
+ [53] aws.signature_0.6.0       svglite_2.1.1            
+ [55] cluster_2.1.4             crayon_1.5.2             
+ [57] drc_3.0-1                 labeling_0.4.2           
+ [59] recipes_1.0.5             edgeR_3.38.1             
+ [61] pkgconfig_2.0.3           tweenr_2.0.2             
+ [63] nlme_3.1-162              vipor_0.4.5              
+ [65] nnet_7.3-18               globals_0.16.2           
+ [67] rlang_1.0.6               lifecycle_1.0.3          
+ [69] sandwich_3.0-2            rsvd_1.0.5               
+ [71] randomForest_4.7-1.1      rprojroot_2.0.3          
+ [73] polyclip_1.10-4           tiff_0.1-11              
+ [75] graph_1.74.0              raster_3.6-20            
+ [77] carData_3.0-5             Rhdf5lib_1.18.2          
+ [79] zoo_1.8-11                base64enc_0.1-3          
+ [81] beeswarm_0.4.0            whisker_0.4.1            
+ [83] GlobalOptions_0.1.2       processx_3.8.0           
+ [85] png_0.1-8                 rjson_0.2.21             
+ [87] shinydashboard_0.7.2      bitops_1.0-7             
+ [89] getPass_0.2-2             R.oo_1.25.0              
+ [91] pROC_1.18.0               rhdf5filters_1.8.0       
+ [93] DelayedMatrixStats_1.20.0 shape_1.4.6              
+ [95] parallelly_1.34.0         jpeg_0.1-10              
+ [97] rstatix_0.7.2             ggsignif_0.6.4           
+ [99] aws.s3_0.3.21             beachmat_2.12.0          
+[101] scales_1.2.1              magrittr_2.0.3           
+[103] plyr_1.8.8                hexbin_1.28.2            
+[105] zlibbioc_1.42.0           compiler_4.2.2           
+[107] dqrng_0.3.0               RColorBrewer_1.1-3       
+[109] plotrix_3.8-2             clue_0.3-64              
+[111] cli_3.6.0                 XVector_0.36.0           
+[113] listenv_0.9.0             ncdfFlow_2.42.1          
+[115] ps_1.7.2                  FlowSOM_2.4.0            
+[117] MASS_7.3-58.1             tidyselect_1.2.0         
+[119] stringi_1.7.12            RProtoBufLib_2.8.0       
+[121] highr_0.10                yaml_2.3.7               
+[123] BiocSingular_1.12.0       locfit_1.5-9.7           
+[125] latticeExtra_0.6-30       ggrepel_0.9.3            
+[127] grid_4.2.2                sass_0.4.5               
+[129] timechange_0.2.0          tools_4.2.2              
+[131] future.apply_1.10.0       parallel_4.2.2           
+[133] CytoML_2.8.0              circlize_0.4.15          
+[135] rstudioapi_0.14           foreach_1.5.2            
+[137] git2r_0.31.0              metapod_1.4.0            
+[139] prodlim_2019.11.13        farver_2.1.1             
+[141] Rtsne_0.16                DropletUtils_1.16.0      
+[143] digest_0.6.31             lava_1.7.2.1             
+[145] shiny_1.7.4               Rcpp_1.0.10              
+[147] car_3.1-1                 broom_1.0.3              
+[149] later_1.3.0               httr_1.4.5               
+[151] ComplexHeatmap_2.12.1     colorspace_2.1-0         
+[153] XML_3.99-0.13             fs_1.6.1                 
+[155] splines_4.2.2             RBGL_1.72.0              
+[157] statmod_1.5.0             scater_1.24.0            
+[159] sp_1.6-0                  systemfonts_1.0.4        
+[161] xtable_1.8-4              jsonlite_1.8.4           
+[163] timeDate_4022.108         ipred_0.9-13             
+[165] R6_2.5.1                  mime_0.12                
+[167] pillar_1.8.1              htmltools_0.5.4          
+[169] nnls_1.4                  glue_1.6.2               
+[171] fastmap_1.1.0             fftwtools_0.9-11         
+[173] BiocNeighbors_1.14.0      class_7.3-21             
+[175] codetools_0.2-19          mvtnorm_1.1-3            
+[177] utf8_1.2.3                bslib_0.4.2              
+[179] curl_5.0.0                ggbeeswarm_0.7.1         
+[181] colorRamps_2.3.1          gtools_3.9.4             
+[183] magick_2.7.3              interp_1.1-3             
+[185] survival_3.5-3            limma_3.52.2             
+[187] rmarkdown_2.20            munsell_0.5.0            
+[189] GetoptLong_1.0.5          rhdf5_2.40.0             
+[191] GenomeInfoDbData_1.2.9    iterators_1.0.14         
+[193] HDF5Array_1.24.1          reshape2_1.4.4           
+[195] gtable_0.3.1             </code></pre>
 </div>
 </div>
 </div>

@@ -36,6 +36,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <link rel="icon" href="https://github.com/workflowr/workflowr-assets/raw/main/img/reproducible.png">
 <!-- Add a small amount of space between sections. -->
@@ -355,7 +357,13 @@ div.tocify {
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/tessbrodie/221201_workflowr_haibin">
+    <span class="fab fa-github"></span>
+     
+    Source code
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -397,13 +405,13 @@ aria-hidden="true"></span> </a>
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2023-03-21
+<strong>Last updated:</strong> 2023-03-22
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 5
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> 2
+aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>221201_workflowr_haibin/</code>
@@ -497,66 +505,16 @@ versions is critical for reproducibility.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongdetected">
-<span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> <strong>Cache:</strong> detected </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongnone">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>Cache:</strong> none </a>
 </p>
 </div>
-<div id="strongCachestrongdetected" class="panel-collapse collapse">
+<div id="strongCachestrongnone" class="panel-collapse collapse">
 <div class="panel-body">
-The following chunks had caches available:
-<ul>
-<li>
-differential abundance analysis with layered metadata preparation
-</li>
-<li>
-differential abundance analysis with layered metadata
-</li>
-<li>
-differential abundance analysis with strain
-</li>
-<li>
-differential abundance analysis with tumor size vs average
-</li>
-<li>
-differential abundance analysis with tumor size
-</li>
-<li>
-differential state analysis for annotation
-</li>
-<li>
-differential state analysis for condition
-</li>
-<li>
-differential state analysis for layer
-</li>
-<li>
-differential state analysis with layered annotation
-</li>
-<li>
-differential state analysis with tumor size - annotation
-</li>
-<li>
-differential state analysis
-</li>
-<li>
-load-libs
-</li>
-<li>
-load data
-</li>
-<li>
-session-info-chunk-inserted-by-workflowr
-</li>
-<li>
-unnamed-chunk-1
-</li>
-</ul>
-<p>To ensure reproducibility of the results, delete the cache directory
-<code>6_statistics_cache</code> and re-run the analysis. To have
-workflowr automatically delete the cache directory prior to building the
-file, set <code>delete_cache = TRUE</code> when running
-<code>wflow_build()</code> or <code>wflow_publish()</code>.</p>
+<p>Nice! There were no cached chunks for this analysis, so you can be
+confident that you successfully produced the results during this
+run.</p>
 </div>
 </div>
 </div>
@@ -605,13 +563,15 @@ laptop/Users2/Tess/SteinbockCellSegmentation/221130_haibin/221201_workflowr_haib
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrong75a88a8">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomtessbrodie221201workflowrhaibintree055605a1ff676034a50ea2490abe327877173062targetblank055605aa">
 <span class="glyphicon glyphicon-ok text-success"
-aria-hidden="true"></span> <strong>Repository version:</strong> 75a88a8
+aria-hidden="true"></span> <strong>Repository version:</strong>
+<a href="https://github.com/tessbrodie/221201_workflowr_haibin/tree/055605a1ff676034a50ea2490abe327877173062" target="_blank">055605a</a>
 </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrong75a88a8"
+<div
+id="strongRepositoryversionstrongahrefhttpsgithubcomtessbrodie221201workflowrhaibintree055605a1ff676034a50ea2490abe327877173062targetblank055605aa"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -620,7 +580,8 @@ and connecting the code version to the results is critical for
 reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version 75a88a8.
+The results in this page were generated with repository version
+<a href="https://github.com/tessbrodie/221201_workflowr_haibin/tree/055605a1ff676034a50ea2490abe327877173062" target="_blank">055605a</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -643,7 +604,6 @@ Ignored files:
     Ignored:    analysis/3_dim_red_cache/
     Ignored:    analysis/4_img_vis_cache/
     Ignored:    analysis/5_spatial_vis_cache/
-    Ignored:    analysis/6_statistics_cache/
 
 Untracked files:
     Untracked:  Umap_target_overlay.pdf
@@ -674,9 +634,6 @@ Untracked files:
     Untracked:  output/spe_ca_v2_dr.rds
     Untracked:  umap_metadata.png
     Untracked:  umap_target.png
-
-Unstaged changes:
-    Modified:   analysis/_site.yml
 
 </code></pre>
 <p>
@@ -724,10 +681,27 @@ Message
 <tbody>
 <tr>
 <td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/tessbrodie/221201_workflowr_haibin/35a46fdccfec07d9040d19fa7a351dcd553e916d/docs/6_statistics.html" target="_blank">35a46fd</a>
+</td>
+<td>
+tessbrodie
+</td>
+<td>
+2023-03-21
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
 Rmd
 </td>
 <td>
-75a88a8
+<a href="https://github.com/tessbrodie/221201_workflowr_haibin/blob/75a88a8e7af8166c7684d78bc8388e164aa729ed/analysis/6_statistics.Rmd" target="_blank">75a88a8</a>
 </td>
 <td>
 tessbrodie
@@ -757,8 +731,13 @@ Publish the initial files for myproject
 </style>
 <div id="load-packages" class="section level3">
 <h3>Load packages</h3>
-<pre class="r foldable"><code>library(SpatialExperiment)
-library(imcRtools)
+<pre class="r foldable"><code>library(SpatialExperiment)</code></pre>
+<pre><code>Warning: multiple methods tables found for &#39;aperm&#39;</code></pre>
+<pre><code>Warning: replacing previous import &#39;BiocGenerics::aperm&#39; by
+&#39;DelayedArray::aperm&#39; when loading &#39;SummarizedExperiment&#39;</code></pre>
+<pre><code>Warning: replacing previous import &#39;BiocGenerics::aperm&#39; by
+&#39;DelayedArray::aperm&#39; when loading &#39;HDF5Array&#39;</code></pre>
+<pre class="r foldable"><code>library(imcRtools)
 library(ggplot2)
 library(viridis)
 library(igraph)
@@ -816,7 +795,7 @@ fit.ab &lt;- glmQLFit(y.ab, da_design, robust = TRUE, abundance.trend = FALSE)
 #Plotting a QL dispersion estimate plot
 
 abundance_qld_plot &lt;- plotQLDisp(fit.ab, cex = 1)</code></pre>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with strain-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20strain-1.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r foldable"><code>#Otherwise create standard contrast
 contrast &lt;- &quot;WT - KO&quot;
 da_contrast &lt;- makeContrasts(contrasts = contrast, levels = da_design)
@@ -875,7 +854,7 @@ ggplot(data = da_plotdata,
         axis.line = element_line(color=&quot;black&quot;, linewidth = 0.5), legend.position = &quot;none&quot;)</code></pre>
 <pre><code>Warning: The `size` argument of `element_line()` is deprecated as of ggplot2 3.4.0.
 ℹ Please use the `linewidth` argument instead.</code></pre>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with strain-2.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20strain-2.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r foldable"><code>#Get the conditions
 spe_ann &lt;- levels(spe$annotation)
 
@@ -900,7 +879,7 @@ fit.ab &lt;- glmQLFit(y.ab, da_design, robust = TRUE, abundance.trend = FALSE)
 #Plotting a QL dispersion estimate plot
 
 abundance_qld_plot &lt;- plotQLDisp(fit.ab, cex = 1)</code></pre>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with tumor size vs average-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20tumor%20size%20vs%20average-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <div id="separated-by-tumor-size" class="section level2 tabset">
@@ -944,31 +923,31 @@ cat(&quot;### &quot;, contrast, &quot;\n&quot;); print(p); cat(&quot;\n\n&quot;)
 }</code></pre>
 <div id="s---m" class="section level3">
 <h3>S - M</h3>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with tumor size-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20tumor%20size-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="m---l" class="section level3">
 <h3>M - L</h3>
 <pre><code>Warning: ggrepel: 7 unlabeled data points (too many overlaps). Consider
 increasing max.overlaps</code></pre>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with tumor size-2.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20tumor%20size-2.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="s---l" class="section level3">
 <h3>S - L</h3>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with tumor size-3.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20tumor%20size-3.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="s---m2-l2" class="section level3">
 <h3>S - (M/2 + L/2)</h3>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with tumor size-4.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20tumor%20size-4.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="m---s2-l2" class="section level3">
 <h3>M - (S/2 + L/2)</h3>
 <pre><code>Warning: ggrepel: 4 unlabeled data points (too many overlaps). Consider
 increasing max.overlaps</code></pre>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with tumor size-5.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20tumor%20size-5.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="l---s2-m2" class="section level3">
 <h3>L - (S/2 + M/2)</h3>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with tumor size-6.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20tumor%20size-6.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r foldable"><code>#Setup
 abundances &lt;- table(spe$celltype, spe$sample_id)
 extra &lt;- colData(spe)[match(colnames(abundances), spe$sample_id),]
@@ -990,7 +969,7 @@ fit.ab &lt;- glmQLFit(y.ab, da_design, robust = TRUE, abundance.trend = FALSE)
 #Plotting a QL dispersion estimate plot
 
 abundance_qld_plot &lt;- plotQLDisp(fit.ab, cex = 1)</code></pre>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with layered metadata preparation-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20layered%20metadata%20preparation-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <div id="separated-by-layered-conditions" class="section level2 tabset">
@@ -1035,41 +1014,41 @@ cat(&quot;### &quot;, contrast, &quot;\n&quot;); print(p); cat(&quot;\n\n&quot;)
 <h3>KO_S - KO_M</h3>
 <pre><code>Warning: ggrepel: 6 unlabeled data points (too many overlaps). Consider
 increasing max.overlaps</code></pre>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with layered metadata-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20layered%20metadata-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="ko_m---ko_l" class="section level3">
 <h3>KO_M - KO_L</h3>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with layered metadata-2.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20layered%20metadata-2.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="ko_s---ko_l" class="section level3">
 <h3>KO_S - KO_L</h3>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with layered metadata-3.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20layered%20metadata-3.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="wt_s---wt_m" class="section level3">
 <h3>WT_S - WT_M</h3>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with layered metadata-4.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20layered%20metadata-4.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="wt_m---wt_l" class="section level3">
 <h3>WT_M - WT_L</h3>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with layered metadata-5.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20layered%20metadata-5.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="wt_s---wt_l" class="section level3">
 <h3>WT_S - WT_L</h3>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with layered metadata-6.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20layered%20metadata-6.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="ko_s---wt_s" class="section level3">
 <h3>KO_S - WT_S</h3>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with layered metadata-7.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20layered%20metadata-7.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="ko_m---wt_m" class="section level3">
 <h3>KO_M - WT_M</h3>
 <pre><code>Warning: ggrepel: 8 unlabeled data points (too many overlaps). Consider
 increasing max.overlaps</code></pre>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with layered metadata-8.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20layered%20metadata-8.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="ko_l---wt_l" class="section level3">
 <h3>KO_L - WT_L</h3>
-<p><img src="figure/6_statistics.Rmd/differential abundance analysis with layered metadata-9.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20abundance%20analysis%20with%20layered%20metadata-9.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r foldable"><code>acounts &lt;- t(assay(spe, name = &quot;exprs&quot;))
 #Get a guide index of sample IDs from rownames
 guide &lt;- sub(&quot;_[^_]+$&quot;, &quot;&quot;, colnames(spe))
@@ -1154,7 +1133,7 @@ ggplot(data = ds_plotdata,
         panel.grid.major = element_line(colour = &quot;gray&quot;, size = 0.25),
         panel.border = element_blank(), axis.ticks.x = element_blank(),
         axis.line = element_line(color=&quot;black&quot;, linewidth = 0.5), legend.position = &quot;none&quot;)</code></pre>
-<p><img src="figure/6_statistics.Rmd/differential state analysis for condition-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20for%20condition-1.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r foldable"><code>acounts &lt;- t(assay(spe, name = &quot;exprs&quot;))
 #Get a guide index of sample IDs from rownames
 guide &lt;- sub(&quot;_[^_]+$&quot;, &quot;&quot;, colnames(spe))
@@ -1245,27 +1224,27 @@ cat(&quot;### &quot;, contrast, &quot;\n&quot;); print(p); cat(&quot;\n\n&quot;)
 }</code></pre>
 <div id="s---m-1" class="section level3">
 <h3>S - M</h3>
-<p><img src="figure/6_statistics.Rmd/differential state analysis with tumor size - annotation-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20with%20tumor%20size%20-%20annotation-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="m---l-1" class="section level3">
 <h3>M - L</h3>
-<p><img src="figure/6_statistics.Rmd/differential state analysis with tumor size - annotation-2.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20with%20tumor%20size%20-%20annotation-2.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="s---l-1" class="section level3">
 <h3>S - L</h3>
-<p><img src="figure/6_statistics.Rmd/differential state analysis with tumor size - annotation-3.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20with%20tumor%20size%20-%20annotation-3.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="s---m2-l2-1" class="section level3">
 <h3>S - (M/2 + L/2)</h3>
-<p><img src="figure/6_statistics.Rmd/differential state analysis with tumor size - annotation-4.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20with%20tumor%20size%20-%20annotation-4.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="m---s2-l2-1" class="section level3">
 <h3>M - (S/2 + L/2)</h3>
-<p><img src="figure/6_statistics.Rmd/differential state analysis with tumor size - annotation-5.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20with%20tumor%20size%20-%20annotation-5.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="l---s2-m2-1" class="section level3">
 <h3>L - (S/2 + M/2)</h3>
-<p><img src="figure/6_statistics.Rmd/differential state analysis with tumor size - annotation-6.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20with%20tumor%20size%20-%20annotation-6.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r foldable"><code>#Get the counts table
 acounts &lt;- t(assay(spe, name = &quot;exprs&quot;))
 #Get a guide index of sample IDs from rownames
@@ -1362,39 +1341,39 @@ cat(&quot;### &quot;, contrast, &quot;\n&quot;); print(p); cat(&quot;\n\n&quot;)
 }</code></pre>
 <div id="ko_s---ko_m-1" class="section level3">
 <h3>KO_S - KO_M</h3>
-<p><img src="figure/6_statistics.Rmd/differential state analysis with layered annotation-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20with%20layered%20annotation-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="ko_m---ko_l-1" class="section level3">
 <h3>KO_M - KO_L</h3>
-<p><img src="figure/6_statistics.Rmd/differential state analysis with layered annotation-2.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20with%20layered%20annotation-2.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="ko_s---ko_l-1" class="section level3">
 <h3>KO_S - KO_L</h3>
-<p><img src="figure/6_statistics.Rmd/differential state analysis with layered annotation-3.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20with%20layered%20annotation-3.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="wt_s---wt_m-1" class="section level3">
 <h3>WT_S - WT_M</h3>
-<p><img src="figure/6_statistics.Rmd/differential state analysis with layered annotation-4.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20with%20layered%20annotation-4.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="wt_m---wt_l-1" class="section level3">
 <h3>WT_M - WT_L</h3>
-<p><img src="figure/6_statistics.Rmd/differential state analysis with layered annotation-5.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20with%20layered%20annotation-5.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="wt_s---wt_l-1" class="section level3">
 <h3>WT_S - WT_L</h3>
-<p><img src="figure/6_statistics.Rmd/differential state analysis with layered annotation-6.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20with%20layered%20annotation-6.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="ko_s---wt_s-1" class="section level3">
 <h3>KO_S - WT_S</h3>
-<p><img src="figure/6_statistics.Rmd/differential state analysis with layered annotation-7.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20with%20layered%20annotation-7.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="ko_m---wt_m-1" class="section level3">
 <h3>KO_M - WT_M</h3>
-<p><img src="figure/6_statistics.Rmd/differential state analysis with layered annotation-8.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20with%20layered%20annotation-8.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="ko_l---wt_l-1" class="section level3">
 <h3>KO_L - WT_L</h3>
-<p><img src="figure/6_statistics.Rmd/differential state analysis with layered annotation-9.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/6_statistics.Rmd/differential%20state%20analysis%20with%20layered%20annotation-9.png" width="672" style="display: block; margin: auto;" /></p>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
@@ -1520,29 +1499,29 @@ loaded via a namespace (and not attached):
 [149] distances_0.1.9             colorspace_2.1-0           
 [151] XML_3.99-0.13               fs_1.6.1                   
 [153] tensor_1.5                  splines_4.2.2              
-[155] RBGL_1.72.0                 spatstat.utils_3.0-1       
-[157] graphlayouts_0.8.4          sp_1.6-0                   
-[159] systemfonts_1.0.4           xtable_1.8-4               
-[161] jsonlite_1.8.4              nloptr_2.0.3               
-[163] tidygraph_1.2.3             R6_2.5.1                   
-[165] pillar_1.8.1                htmltools_0.5.4            
-[167] mime_0.12                   nnls_1.4                   
-[169] glue_1.6.2                  fastmap_1.1.0              
-[171] minqa_1.2.5                 DT_0.27                    
-[173] BiocNeighbors_1.14.0        fftwtools_0.9-11           
-[175] class_7.3-21                codetools_0.2-19           
-[177] mvtnorm_1.1-3               utf8_1.2.3                 
-[179] lattice_0.20-45             bslib_0.4.2                
-[181] spatstat.sparse_3.0-0       numDeriv_2016.8-1.1        
-[183] curl_5.0.0                  ggbeeswarm_0.7.1           
-[185] colorRamps_2.3.1            magick_2.7.3               
-[187] interp_1.1-3                survival_3.5-3             
-[189] rmarkdown_2.20              munsell_0.5.0              
-[191] e1071_1.7-13                GetoptLong_1.0.5           
-[193] rhdf5_2.40.0                GenomeInfoDbData_1.2.9     
-[195] iterators_1.0.14            HDF5Array_1.24.1           
-[197] reshape2_1.4.4              gtable_0.3.1               
-[199] spatstat.core_2.4-4        </code></pre>
+[155] statmod_1.5.0               RBGL_1.72.0                
+[157] spatstat.utils_3.0-1        graphlayouts_0.8.4         
+[159] sp_1.6-0                    systemfonts_1.0.4          
+[161] xtable_1.8-4                jsonlite_1.8.4             
+[163] nloptr_2.0.3                tidygraph_1.2.3            
+[165] R6_2.5.1                    pillar_1.8.1               
+[167] htmltools_0.5.4             mime_0.12                  
+[169] nnls_1.4                    glue_1.6.2                 
+[171] fastmap_1.1.0               minqa_1.2.5                
+[173] DT_0.27                     BiocNeighbors_1.14.0       
+[175] fftwtools_0.9-11            class_7.3-21               
+[177] codetools_0.2-19            mvtnorm_1.1-3              
+[179] utf8_1.2.3                  lattice_0.20-45            
+[181] bslib_0.4.2                 spatstat.sparse_3.0-0      
+[183] numDeriv_2016.8-1.1         curl_5.0.0                 
+[185] ggbeeswarm_0.7.1            colorRamps_2.3.1           
+[187] magick_2.7.3                interp_1.1-3               
+[189] survival_3.5-3              rmarkdown_2.20             
+[191] munsell_0.5.0               e1071_1.7-13               
+[193] GetoptLong_1.0.5            rhdf5_2.40.0               
+[195] GenomeInfoDbData_1.2.9      iterators_1.0.14           
+[197] HDF5Array_1.24.1            reshape2_1.4.4             
+[199] gtable_0.3.1                spatstat.core_2.4-4        </code></pre>
 </div>
 </div>
 </div>

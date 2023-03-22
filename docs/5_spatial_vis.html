@@ -36,6 +36,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <link rel="icon" href="https://github.com/workflowr/workflowr-assets/raw/main/img/reproducible.png">
 <!-- Add a small amount of space between sections. -->
@@ -355,7 +357,13 @@ div.tocify {
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/tessbrodie/221201_workflowr_haibin">
+    <span class="fab fa-github"></span>
+     
+    Source code
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -397,13 +405,13 @@ aria-hidden="true"></span> </a>
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2023-03-21
+<strong>Last updated:</strong> 2023-03-22
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 5
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> 2
+aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>221201_workflowr_haibin/</code>
@@ -497,144 +505,16 @@ versions is critical for reproducibility.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongdetected">
-<span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> <strong>Cache:</strong> detected </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongnone">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>Cache:</strong> none </a>
 </p>
 </div>
-<div id="strongCachestrongdetected" class="panel-collapse collapse">
+<div id="strongCachestrongnone" class="panel-collapse collapse">
 <div class="panel-body">
-The following chunks had caches available:
-<ul>
-<li>
-build_spatial_graph
-</li>
-<li>
-community_all_heatmap
-</li>
-<li>
-community_nontumor_heatmap
-</li>
-<li>
-compare_CN_SC
-</li>
-<li>
-delaunay_interaction
-</li>
-<li>
-dist_histograms
-</li>
-<li>
-expansion_interaction
-</li>
-<li>
-filter_SC_bycellnumber
-</li>
-<li>
-filter_SC
-</li>
-<li>
-interaction_targetexprs
-</li>
-<li>
-interactions_heatmap
-</li>
-<li>
-interactions_heatmap_patch
-</li>
-<li>
-interactions_setup
-</li>
-<li>
-KNN_interaction
-</li>
-<li>
-knn_interaction_graph
-</li>
-<li>
-knn_interaction_heatmap
-</li>
-<li>
-lisaClust_heatmap
-</li>
-<li>
-lisaClust_plot
-</li>
-<li>
-lisaClust_setup
-</li>
-<li>
-load-libs
-</li>
-<li>
-load data
-</li>
-<li>
-load data2
-</li>
-<li>
-min_dist_cells
-</li>
-<li>
-neighborhoods_by_expression_heatmap
-</li>
-<li>
-neighborhoods_by_exprs
-</li>
-<li>
-new community steinbock interactions
-</li>
-<li>
-patch detection
-</li>
-<li>
-patch_size
-</li>
-<li>
-plot nontumor communities
-</li>
-<li>
-plot tumor communities
-</li>
-<li>
-plot_cell_type_all
-</li>
-<li>
-save spe4
-</li>
-<li>
-save spe5
-</li>
-<li>
-sc_graphs
-</li>
-<li>
-SC_graphs_ncellsngroup_color
-</li>
-<li>
-session-info-chunk-inserted-by-workflowr
-</li>
-<li>
-set colors
-</li>
-<li>
-spatial_context_analysis
-</li>
-<li>
-steinbock_interaction
-</li>
-<li>
-T cell infiltration
-</li>
-<li>
-unnamed-chunk-1
-</li>
-</ul>
-<p>To ensure reproducibility of the results, delete the cache directory
-<code>5_spatial_vis_cache</code> and re-run the analysis. To have
-workflowr automatically delete the cache directory prior to building the
-file, set <code>delete_cache = TRUE</code> when running
-<code>wflow_build()</code> or <code>wflow_publish()</code>.</p>
+<p>Nice! There were no cached chunks for this analysis, so you can be
+confident that you successfully produced the results during this
+run.</p>
 </div>
 </div>
 </div>
@@ -683,13 +563,15 @@ laptop/Users2/Tess/SteinbockCellSegmentation/221130_haibin/221201_workflowr_haib
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrong75a88a8">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomtessbrodie221201workflowrhaibintree1df1214483c1f552e1cd641d03b3e9209df5b637targetblank1df1214a">
 <span class="glyphicon glyphicon-ok text-success"
-aria-hidden="true"></span> <strong>Repository version:</strong> 75a88a8
+aria-hidden="true"></span> <strong>Repository version:</strong>
+<a href="https://github.com/tessbrodie/221201_workflowr_haibin/tree/1df1214483c1f552e1cd641d03b3e9209df5b637" target="_blank">1df1214</a>
 </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrong75a88a8"
+<div
+id="strongRepositoryversionstrongahrefhttpsgithubcomtessbrodie221201workflowrhaibintree1df1214483c1f552e1cd641d03b3e9209df5b637targetblank1df1214a"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -698,7 +580,8 @@ and connecting the code version to the results is critical for
 reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version 75a88a8.
+The results in this page were generated with repository version
+<a href="https://github.com/tessbrodie/221201_workflowr_haibin/tree/1df1214483c1f552e1cd641d03b3e9209df5b637" target="_blank">1df1214</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -720,7 +603,6 @@ Ignored files:
     Ignored:    analysis/2_IMCA_cell_annotation_cache/
     Ignored:    analysis/3_dim_red_cache/
     Ignored:    analysis/4_img_vis_cache/
-    Ignored:    analysis/5_spatial_vis_cache/
     Ignored:    analysis/6_statistics_cache/
 
 Untracked files:
@@ -752,9 +634,6 @@ Untracked files:
     Untracked:  output/spe_ca_v2_dr.rds
     Untracked:  umap_metadata.png
     Untracked:  umap_target.png
-
-Unstaged changes:
-    Modified:   analysis/_site.yml
 
 </code></pre>
 <p>
@@ -802,10 +681,27 @@ Message
 <tbody>
 <tr>
 <td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/tessbrodie/221201_workflowr_haibin/35a46fdccfec07d9040d19fa7a351dcd553e916d/docs/5_spatial_vis.html" target="_blank">35a46fd</a>
+</td>
+<td>
+tessbrodie
+</td>
+<td>
+2023-03-21
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
 Rmd
 </td>
 <td>
-75a88a8
+<a href="https://github.com/tessbrodie/221201_workflowr_haibin/blob/75a88a8e7af8166c7684d78bc8388e164aa729ed/analysis/5_spatial_vis.Rmd" target="_blank">75a88a8</a>
 </td>
 <td>
 tessbrodie
@@ -1037,7 +933,7 @@ spe &lt;- detectCommunity(spe,
             node_size_fix = 0.5) +
     theme(legend.position = &quot;none&quot;) +
     ggtitle(&quot;Spatial tumor communities&quot;) </code></pre>
-<p><img src="figure/5_spatial_vis.Rmd/plot tumor communities-1.png" width="1920" style="display: block; margin: auto;" /></p>
+<p><img src="figure/5_spatial_vis.Rmd/plot%20tumor%20communities-1.png" width="1920" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>    # scale_color_manual(values = rev(colors()))</code></pre>
 </div>
 <div id="plot-nontumor-communities" class="section level3">
@@ -1048,7 +944,7 @@ spe &lt;- detectCommunity(spe,
             node_size_fix = 0.5) +
     theme(legend.position = &quot;none&quot;) +
     ggtitle(&quot;Spatial non-tumor communities&quot;) </code></pre>
-<p><img src="figure/5_spatial_vis.Rmd/plot nontumor communities-1.png" width="1920" style="display: block; margin: auto;" /></p>
+<p><img src="figure/5_spatial_vis.Rmd/plot%20nontumor%20communities-1.png" width="1920" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>    # scale_color_manual(values = rev(colors()))</code></pre>
 </div>
 <div id="plot-nontumor-community-heatmap" class="section level3">
@@ -1278,7 +1174,7 @@ plotSpatial(spe,
             img_id = &quot;sample_id&quot;, 
             node_size_fix = 0.5) +
     theme(legend.position = &quot;none&quot;) </code></pre>
-<p><img src="figure/5_spatial_vis.Rmd/patch detection-1.png" width="1920" style="display: block; margin: auto;" /></p>
+<p><img src="figure/5_spatial_vis.Rmd/patch%20detection-1.png" width="1920" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>    # scale_color_manual(values = colors())</code></pre>
 <pre class="r"><code>colData(spe) %&gt;% as_tibble() %&gt;%
     group_by(patch_id, sample_id) %&gt;%
@@ -1290,7 +1186,7 @@ plotSpatial(spe,
     theme_classic()</code></pre>
 <pre><code>`summarise()` has grouped output by &#39;patch_id&#39;. You can override using the
 `.groups` argument.</code></pre>
-<p><img src="figure/5_spatial_vis.Rmd/T cell infiltration-1.png" width="1920" style="display: block; margin: auto;" /></p>
+<p><img src="figure/5_spatial_vis.Rmd/T%20cell%20infiltration-1.png" width="1920" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>patch_size &lt;- patchSize(spe, &quot;patch_id&quot;)
 
 patch_size &lt;- merge(patch_size, 
@@ -1471,38 +1367,39 @@ loaded via a namespace (and not attached):
  [85] fftwtools_0.9-11          evaluate_0.20            
  [87] xtable_1.8-4              jpeg_0.1-10              
  [89] shape_1.4.6               gridExtra_2.3            
- [91] compiler_4.2.2            KernSmooth_2.23-20       
- [93] crayon_1.5.2              minqa_1.2.5              
- [95] R.oo_1.25.0               htmltools_0.5.4          
- [97] mgcv_1.8-41               later_1.3.0              
- [99] tzdb_0.3.0                tiff_0.1-11              
-[101] DBI_1.1.3                 tweenr_2.0.2             
-[103] MASS_7.3-58.1             boot_1.3-28.1            
-[105] sf_1.0-9                  Matrix_1.5-3             
-[107] cli_3.6.0                 R.methodsS3_1.8.2        
-[109] parallel_4.2.2            pkgconfig_2.0.3          
-[111] getPass_0.2-2             numDeriv_2016.8-1.1      
-[113] sp_1.6-0                  spatstat.sparse_3.0-0    
-[115] terra_1.7-18              scuttle_1.6.2            
-[117] svglite_2.1.1             vipor_0.4.5              
-[119] bslib_0.4.2               dqrng_0.3.0              
-[121] XVector_0.36.0            callr_3.7.3              
-[123] digest_0.6.31             spatstat.data_3.0-0      
-[125] rmarkdown_2.20            edgeR_3.38.1             
-[127] distances_0.1.9           DelayedMatrixStats_1.20.0
-[129] shiny_1.7.4               nloptr_2.0.3             
-[131] rjson_0.2.21              nlme_3.1-162             
-[133] lifecycle_1.0.3           jsonlite_1.8.4           
-[135] Rhdf5lib_1.18.2           BiocNeighbors_1.14.0     
-[137] limma_3.52.2              fansi_1.0.4              
-[139] pillar_1.8.1              lattice_0.20-45          
-[141] fastmap_1.1.0             httr_1.4.5               
-[143] glue_1.6.2                png_0.1-8                
-[145] svgPanZoom_0.3.4          bit_4.0.5                
-[147] ggforce_0.4.1             class_7.3-21             
-[149] stringi_1.7.12            sass_0.4.5               
-[151] HDF5Array_1.24.1          nnls_1.4                 
-[153] e1071_1.7-13             </code></pre>
+ [91] compiler_4.2.2            V8_4.2.2                 
+ [93] KernSmooth_2.23-20        crayon_1.5.2             
+ [95] minqa_1.2.5               R.oo_1.25.0              
+ [97] htmltools_0.5.4           mgcv_1.8-41              
+ [99] later_1.3.0               tzdb_0.3.0               
+[101] tiff_0.1-11               DBI_1.1.3                
+[103] tweenr_2.0.2              MASS_7.3-58.1            
+[105] boot_1.3-28.1             sf_1.0-9                 
+[107] Matrix_1.5-3              cli_3.6.0                
+[109] R.methodsS3_1.8.2         parallel_4.2.2           
+[111] pkgconfig_2.0.3           getPass_0.2-2            
+[113] numDeriv_2016.8-1.1       sp_1.6-0                 
+[115] spatstat.sparse_3.0-0     terra_1.7-18             
+[117] scuttle_1.6.2             svglite_2.1.1            
+[119] vipor_0.4.5               bslib_0.4.2              
+[121] dqrng_0.3.0               XVector_0.36.0           
+[123] callr_3.7.3               digest_0.6.31            
+[125] spatstat.data_3.0-0       rmarkdown_2.20           
+[127] edgeR_3.38.1              distances_0.1.9          
+[129] DelayedMatrixStats_1.20.0 curl_5.0.0               
+[131] shiny_1.7.4               nloptr_2.0.3             
+[133] rjson_0.2.21              nlme_3.1-162             
+[135] lifecycle_1.0.3           jsonlite_1.8.4           
+[137] Rhdf5lib_1.18.2           BiocNeighbors_1.14.0     
+[139] limma_3.52.2              fansi_1.0.4              
+[141] pillar_1.8.1              lattice_0.20-45          
+[143] fastmap_1.1.0             httr_1.4.5               
+[145] glue_1.6.2                png_0.1-8                
+[147] svgPanZoom_0.3.4          bit_4.0.5                
+[149] ggforce_0.4.1             class_7.3-21             
+[151] stringi_1.7.12            sass_0.4.5               
+[153] HDF5Array_1.24.1          nnls_1.4                 
+[155] e1071_1.7-13             </code></pre>
 </div>
 </div>
 </div>
